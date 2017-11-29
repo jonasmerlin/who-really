@@ -4,7 +4,6 @@ from keras.models import Sequential
 from keras.layers import Dropout, Flatten, Dense
 from keras import applications
 from keras.utils.np_utils import to_categorical
-import matplotlib.pyplot as plt
 import math
 import os
 

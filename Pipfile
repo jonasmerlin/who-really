@@ -5,7 +5,6 @@ verify_ssl = true
 [packages]
 flask = "*"
 keras = "*"
-matplotlib = "*"
 numpy = "*"
 scipy = "*"
 tensorflow = "*"
