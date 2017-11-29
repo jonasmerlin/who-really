@@ -1,5 +1,6 @@
 import os
 from flask import Flask, request, redirect, url_for, make_response, jsonify, abort
+from flask import render_template
 from werkzeug.utils import secure_filename
 from main import classify_portrait
 
@@ -16,6 +17,10 @@ def allowed_file(filename):
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
+
+@app.route('/', methods=['GET'])
+def hello():
+    return render_template('client.html')
 
 @app.route('/classification/portrait', methods=['POST'])
 def upload_file():

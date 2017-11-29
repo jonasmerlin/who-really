@@ -1,0 +1,1 @@
+web: FLASK_APP=code/app/server.py flask run
