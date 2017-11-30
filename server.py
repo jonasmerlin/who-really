@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, redirect, url_for, make_response, jsonify, abort
 from flask import render_template
 from werkzeug.utils import secure_filename
-from main import classify_portrait
+from classify_portrait import classify_portrait
 
 UPLOAD_FOLDER = './portraits'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
