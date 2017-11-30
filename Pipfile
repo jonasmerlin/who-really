@@ -10,6 +10,7 @@ numpy = "*"
 scipy = "*"
 tensorflow = "*"
 pillow = "*"
+h5py = "*"
 
 [requires]
 python_version = "3.5"
