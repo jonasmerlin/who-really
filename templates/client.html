@@ -1,22 +1,48 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/mainpage.css')}}">
 </head>
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <h2 id="h1">Species Finder</h2>
-    <div id="div">
-        <form action="https://whoreally.herokuapp.com/classification/portrait" method="post" enctype="multipart/form-data">
-            <h2 id="h2">This is WhoReally?</h2>
-            <p id="p1">WhoReally? uses cutting edge image recognition algorithms to find out who you
-                <em>really</em> are.</p>
-            <p>Upload a portrait of yourself or a friend and learn what our A.I. thinks about it.</p>
-            <input type="file" name="file" id="fileToUpload">
-            <button onclick="search()">Search</button>
-            <p id="message"></p>
-        </form>
+    <header class="navbar">
+        <section class="navbar-section"></section>
+        <section class="navbar-center">
+            <img src="{{ url_for('static', filename='images/who-really-logo.png') }}" alt="who-really-logo">
+        </section>
+        <section class="navbar-section"></section>
+    </header>
+    <div id="div" class="container">
+        <div class="columns">
+            <div class="column col-6 col-mx-auto mid-part-container">
+                <div class="mid-part">
+
+                    <p id="p1">WhoReally?! uses cutting edge image recognition algorithms to find out who you
+                        <em>really</em> are.</p>
+                    <p>Upload a portrait of yourself or a friend and learn what our A.I. thinks about it.</p>
+
+                    <form class="columns col-gapless" action="https://whoreally.herokuapp.com/classification/portrait" method="post" enctype="multipart/form-data">
+                        <div class="col-3">
+                            <label class="form-label" for="fileToUpload">Portrait:</label>
+                        </div>
+                        <div class="col-7">
+                            <input class="form-input" type="file" name="file" id="fileToUpload">
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-action btn-lg" onclick="search()">
+                                <i class="icon icon-upload"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

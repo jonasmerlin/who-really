@@ -1,30 +1,42 @@
-body{
-    font: "Times New Roman";
-    font-size: medium;
-    color: white;
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: medium;
+  color: #30343f;
+  background-image: url(/static/images/geometry2.png);
 }
 
 body {
-    background-color: #426086;
+  /* background-color: #426086; */
+  background-color: #ffffff;
 }
 
-#div {
-    margin: auto;
-    width: 40%;
-    padding: 70px 0;
+/* #div {
+  margin: auto;
+  width: 40%;
+  padding: 70px 0;
 }
 
 #fileToUpload {
-    margin-top: 20px;
-    margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #p1 {
-    margin-top:-10px;
-    margin-left:20px;
+  margin-top: -10px;
+  margin-left: 20px;
 }
 
 #h2 {
-    margin-left:10px;
-    font-size:25px;
+  margin-left: 10px;
+  font-size: 25px;
+} */
+
+.mid-part-container {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.mid-part {
+  margin: 80;
 }
