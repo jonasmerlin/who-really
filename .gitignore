@@ -147,3 +147,5 @@ env/
 
 .floydexpt
 .floydignore
+
+datasets/
