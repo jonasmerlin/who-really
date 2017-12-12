@@ -23,3 +23,7 @@ The code for our website. Either upload a file yourself or provide a URL. If you
 ### [who-really-cli](https://github.com/jonasmerlin/who-really-cli)
 
 A basic CLI for Who Really?! Interacts with the API via HTTP requests.
+
+### [who-really-notebooks](https://github.com/jonasmerlin/who-really-notebooks)
+
+Here you can find a few jupyter notebooks we initally made to help those on the team with no prior machine learning experience learn.
